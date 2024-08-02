@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.titulo-despedida {
+    font-size: 30px;
+    font-family: "Gupter", serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.links {
+    text-align: center;
+    font-style: italic;
+    margin: 0 10px 0 10px;
+}
+
+li{
+    display: inline;
+    margin: 0 10px 0 10px;
+}
+
+ul{
+    text-align: center;
+    margin: 50px 10px 50px 10px;
+    font-size: larger;
+}
+
+.link-limpio {
+text-decoration: none;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.links-editados {
+    font-size: 20px;
+}
+
+.logo-trapos {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.primer-video {
+    margin-left: 35%;
+    width: 30%;
+}
