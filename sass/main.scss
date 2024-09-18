@@ -1,6 +1,5 @@
-@import 'variables'; // No need for the underscore or .scss
+@import 'variables'; 
 
-// Reu// Reuse variables in styles
 .accesorios,
 .almohadones {
   transition: $transition-duration;
