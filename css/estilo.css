@@ -1,0 +1,132 @@
+.accesorios,
+.almohadones {
+  transition: 0.4s;
+  cursor: pointer;
+}
+.accesorios:hover,
+.almohadones:hover {
+  transform: scale(1.09);
+  opacity: 0.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbf7f4;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.footer {
+  background-color: #eed2cc;
+}
+.footer .media-title,
+.footer .comentarios-title,
+.footer .contactanos-title {
+  font-family: "Gupter", serif;
+  font-size: 1.5rem;
+  color: #2e294e;
+}
+.footer .media-logo {
+  width: 2rem;
+}
+.footer .over-box {
+  font-family: "Gupter", serif;
+  display: inline-block;
+}
+.footer #box {
+  border: 1px solid black;
+  height: 1.5rem;
+}
+
+.header {
+  background-image: linear-gradient(to left, #efd4d1, white);
+}
+.header .main-logo {
+  width: 20rem;
+}
+.header #search-bar {
+  width: 20rem;
+  height: 2rem;
+  border: 1px solid black;
+  padding-left: 0.5rem;
+}
+.header .link-limpio {
+  text-decoration: none;
+  color: #2e294e;
+  font-family: "Gupter", serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.header .link-limpio:hover {
+  opacity: 0.2;
+}
+
+.img-sm {
+  height: 73vh;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.img-sm:hover {
+  transform: scale(1.09);
+  opacity: 0.5;
+}
+
+marquee {
+  height: 2rem;
+  background-color: #eed2cc;
+}
+marquee .p-img {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Gupter", serif;
+  width: fit-content;
+  color: rgb(58, 19, 63);
+}
+marquee .logo-correo {
+  width: 2rem;
+  padding-left: 0.5rem;
+}
+
+.slogan-wrapper {
+  background-image: radial-gradient(circle, #efd4d1, white);
+  height: 5rem;
+}
+.slogan-wrapper h2 {
+  font-family: "Gupter", serif;
+  background-image: radial-gradient(circle, #efd4d1, white);
+  color: #2e294e;
+}
+
+.text-q,
+.text-a,
+.text-title {
+  font-family: "Gupter", serif;
+  color: #2e294e;
+}
+
+.text-q {
+  font-size: 1.3rem;
+}
+
+.text-a {
+  font-size: 1rem;
+}
+
+.text-title {
+  font-size: 2rem;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=estilo.css.map */

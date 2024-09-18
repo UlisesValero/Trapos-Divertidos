@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trapos Divertidos</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,53 +15,87 @@
         rel="stylesheet">
 </head>
 
-<body>
+<body class="grid-container">
 
-    <div>
-        <img src="Logo.webp" alt="Logotipo Trapos Divertidos" class="logo-trapos">
+    <header class="row w-100 header">
+        <div class="col-xxl-6 col-lg-3 d-flex justify-content-center">
+            <a href="index.html"><img src="public/Logo.webp" alt="Logotipo Trapos Divertidos"
+                    class=" pb-3 main-logo"></a>
+            <input type="text" placeholder="Buscar..." id="search-bar"
+                class="d-xxl-block align-self-center ms-3 d-none">
+        </div>
 
+        <nav class="col-xxl-6 col-lg-9 d-flex justify-content-evenly align-items-center">
+            <a href="pages/sobre-nosotros.html" class="link-limpio">Sobre nosotros</a>
+            <a href="pages/preguntas_frecuentes.html" class="link-limpio">Preguntas Frecuentes</a>
+            <a href="https://www.traposdivertidos.com.ar/suma-nuestra-marca/" target="_blank"
+                class="link-limpio">Mayorista</a>
+        </nav>
+    </header>
+
+    <div class="row w-100">
+        <marquee behavior="" direction="right" class="p-0">
+            <p class="p-img">¡Envíos a todo el país! - Correo Argentino Shipping</p>
+            <img src="public/logo-correo.png" class="logo-correo" alt="logo-correo">
+        </marquee>
     </div>
-    <nav>
 
-        <article>
-            <section class="links-editados">
-                <ul>
-                    <li><a href="sobre nosotros.html" class="link-limpio">Sobre nosotros</a></li>
-                    <li><a href="preguntas frecuentes.html" class="link-limpio">Preguntas frecuentes</a></li>
-                    <li><a href="https://www.traposdivertidos.com.ar/" target="_blank" class="link-limpio">Mayorista</a>
-                    </li>
-                    <li><a href="almohadones.html" class="link-limpio">Almohadones</a>
-                    </li>
-                    <li><a href="accesorios.html" class="link-limpio">Accesorios</a>
-                    </li>
-                    <li><a href="nidos.html" class="link-limpio">Nidos</a>
-                    </li>
-                </ul>
-            </section>
-        </article>
+    <div class="row w-100">
+        <img src="public/main-img.jpeg" class="p-0 main-img" alt="imagen-principal">
+    </div>
 
-    </nav>
+    <div class="row w-100 mt-5 slogan-wrapper">
+        <h2 class="d-flex justify-content-center align-items-center m-0">14 AÑOS ACOMPAÑANDO FAMILIAS</h2>
+    </div>
 
-    <video src="video.mp4" controls class="primer-video">Video Influencers</video>
 
-    <footer>
+    <div class="row w-100 mt-5 mb-5">
+        <a href="pages/almohadones.html" class="col-md-6 text-center">
+            <img src="public/ace-oso.webp" class="border border-dark rounded img-sm mb-5" alt="ace-oso"> </a>
+        <a href="pages/accesorios.html" class="col-md-6 text-center">
+            <img src="public/cesto-coneja.jpeg" class="border border-dark rounded img-sm" alt="cesto-coneja"></a>
+    </div>
 
-        <h3 class="titulo-despedida">¡Nuestras redes!</h3>
-        <article>
-            <section class="links">
-                <a href="https://www.facebook.com/traposdivertidosoficial" class="links">Facebook</a>
-                <a href="https://www.instagram.com/trapos_divertidos/" class="links">Instagram</a>
-                <a href="https://x.com/TDivertidos" class="links">Twitter</a>
-            </section>
-        </article>
-        <label for="Dejanos tu opinion!">Dejanos tu opinion!</label>
-        <form action="">
-            <textarea name="Dejanos tu opinion!" id="Dejanos tu opinion!"></textarea>
-        </form>
+    <footer class="row w-100 footer">
+        <nav class="col-md-4 col-12 d-block text-center mt-3 media-container">
+            <h3 class="mb-3 media-title">¡Nuestras redes!</h3>
+            <a href="https://www.facebook.com/traposdivertidosoficial"><img src="public/facebook-logo.png"
+                    class="mt-2 media-logo" alt="facebook-logo"></a>
+            <a href="https://www.instagram.com/trapos_divertidos/"><img src="public/instagram-logo.webp"
+                    class="mt-2 media-logo" alt="instagram-logo"></a>
+            <a href="https://x.com/TDivertidos"><img src="public/x-logo.png" class="mt-2 media-logo" alt="x-logo"></a>
+        </nav>
+        <div class="col-md-4 col-12 d-block text-center mt-4 comentarios-container">
+            <h3 class="mb-3 comentarios-title">Registrate en nuestra web</h3>
+            <label for="nombre" class="over-box">Nombre</label>
+            <form action="">
+                <textarea name="nombre" id="box"></textarea>
+            </form>
+            <label for="apellido" class="over-box">Apellido</label>
+            <form action="">
+                <textarea name="apellido" id="box"></textarea>
+            </form>
+            <label for="correo-electronico" class="over-box">Correo electronico</label>
+            <form action="">
+                <textarea name="correo-electronico" id="box"></textarea>
+            </form>
+            <label for="provincia" class="over-box">Provincia</label>
+            <form action="">
+                <textarea name="provincia" id="box"></textarea>
+            </form>
+        </div>
+        <div class="col-md-4 col-12 d-block text-center mt-4 contactanos-container">
+            <h3 class="mb-3 contactanos-title">¡Contactanos!</h3>
+            <p class="mb-1 contactanos">traposdivertidosoficial@gmail.com</p>
+            <p class="mb-1 contactanos">+54 1130341310</p>
+            <p class="mb-1 contactanos">Unicamente ventas online</p>
+        </div>
     </footer>
 
 
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

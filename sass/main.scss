@@ -1,0 +1,145 @@
+@import 'variables'; // No need for the underscore or .scss
+
+// Reu// Reuse variables in styles
+.accesorios,
+.almohadones {
+  transition: $transition-duration;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale($hover-scale);
+    opacity: $hover-opacity;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $primary-bg-color;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+  min-height: 100%;
+}
+
+html {
+  height: 100%;
+}
+
+.footer {
+  background-color: #eed2cc;
+
+  .media-title,
+  .comentarios-title,
+  .contactanos-title {
+    font-family: "Gupter", serif;
+    font-size: 1.5rem;
+    color: #2e294e;
+  }
+
+  .media-logo {
+    width: 2rem;
+  }
+
+  .over-box {
+    font-family: "Gupter", serif;
+    display: inline-block;
+  }
+
+  #box {
+    border: 1px solid black;
+    height: 1.5rem;
+  }
+}
+
+.header {
+  background-image: $header-gradient;
+
+  .main-logo {
+    width: 20rem;
+  }
+
+  #search-bar {
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid black;
+    padding-left: 0.5rem;
+  }
+
+  .link-limpio {
+    text-decoration: none;
+    color: $primary-color;
+    font-family: $font-family;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    font-weight: lighter;
+
+    &:hover {
+      opacity: $link-hover-opacity;
+    }
+  }
+}
+
+.img-sm {
+  height: 73vh;
+  transition: $transition-duration;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale($hover-scale);
+    opacity: $hover-opacity;
+  }
+}
+
+marquee {
+  height: 2rem;
+  background-color: #eed2cc;
+
+  .p-img {
+    display: inline-block;
+    font-size: $p-font-size;
+    font-family: $font-family;
+    width: fit-content;
+    color: rgb(58, 19, 63);
+  }
+
+  .logo-correo {
+    width: 2rem;
+    padding-left: 0.5rem;
+  }
+}
+
+.slogan-wrapper {
+  background-image: $slogan-gradient;
+  height: 5rem;
+
+  h2 {
+    font-family: $font-family;
+    background-image: $slogan-gradient;
+    color: $primary-color;
+  }
+}
+
+.text-q,
+.text-a,
+.text-title {
+  font-family: $font-family;
+  color: $primary-color;
+}
+
+.text-q {
+  font-size: 1.3rem;
+}
+
+.text-a {
+  font-size: 1rem;
+}
+
+.text-title {
+  font-size: 2rem;
+  text-decoration: underline;
+}
