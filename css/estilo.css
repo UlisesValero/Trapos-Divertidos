@@ -5,7 +5,7 @@
 }
 .accesorios:hover,
 .almohadones:hover {
-  transform: scale(1.09);
+  transform: scale(0.95);
   opacity: 0.5;
 }
 
@@ -79,7 +79,7 @@ html {
   cursor: pointer;
 }
 .img-sm:hover {
-  transform: scale(1.09);
+  transform: scale(0.95);
   opacity: 0.5;
 }
 
